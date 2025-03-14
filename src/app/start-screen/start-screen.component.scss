@@ -1,0 +1,12 @@
+.start-screen {
+  background-color: #404040;
+  width: 100vw; //hier sind die scrollbalken nicht miteingerechnet deshalb maxwidth
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 100vh;
+  }
+}
