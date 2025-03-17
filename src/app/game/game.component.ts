@@ -13,8 +13,13 @@ export class GameComponent {
   pickCardAnimation = false;
   game: Game = new Game();
 
+  ngOnInit(): void {
+    this.newGame();
+  }
+
   newGame() {
     this.game = new Game();
+    console.log(this.game);
   }
 
   takeCard() {
