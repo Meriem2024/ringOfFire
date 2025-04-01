@@ -11,6 +11,7 @@ import { Game } from '../../models/game';
 })
 export class GameComponent {
   pickCardAnimation = false;
+  currentCard: string = '';
   game: Game = new Game();
 
   ngOnInit(): void {
@@ -23,6 +24,8 @@ export class GameComponent {
   }
 
   takeCard() {
+    this.currentCard = this.game.stack.pop() || '';
+    console.log(this.currentCard);
     this.pickCardAnimation = true;
   }
 }
